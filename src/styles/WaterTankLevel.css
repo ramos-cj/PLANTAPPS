@@ -1,0 +1,69 @@
+/* src/styles/WaterTankLevel.css */
+
+.watertank-container {
+    background-image: url("../assets/leaf-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .watertank-box {
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    padding: 20px;
+    max-width: 300px;
+    margin: 100px auto;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .watertank-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .watertank-progress {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+  }
+  
+  .watertank-text {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .close-button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #1b5e20;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .close-button:hover {
+    background-color: #145a15;
+  }
+  

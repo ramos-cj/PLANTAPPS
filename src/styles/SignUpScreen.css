@@ -1,0 +1,138 @@
+.signup-container {
+  background-image: url("../assets/leaf-bg.jpg"); /* Adjust if needed */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.signup-box {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 340px;
+  text-align: center;
+  color: white;
+}
+
+.yucca-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.signup-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: black;
+  font-size: 14px;
+}
+
+.main-button {
+  width: 100%;
+  background-color: #004d00;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.divider {
+  font-size: 14px;
+  margin: 16px 0 10px;
+}
+
+.google-button {
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.google-icon {
+  height: 18px;
+  margin-right: 10px;
+}
+
+.login-redirect {
+    position: absolute;
+    top: 530px;
+    left: 70px;
+    font-size: 13px;
+    color: #ccc;
+  }
+  
+  .login-link {
+    color: #00ccff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .login-link:hover {
+    color: #00a3cc;
+  }
+  
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  .yucca-logo {
+    position: absolute;
+    top: -100px;
+    left: 70px;
+    width: 200px;
+  }
+
+  .input-field{
+    font-size: 15px;
+    padding: 15px;
+    width: 80%;
+  }
+
+  .main-button {
+    font-size: 15px;
+    padding: 15px;
+    width: 90%;
+  }
+
+  .google-button {
+    font-size: 15px;
+    padding: 15px;
+    width: 88%;
+  }
+
+  .privacy-text {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,81 @@
+.plant-detail-container {
+    background-image: url('../assets/leaf-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .plant-detail-content {
+    padding: 20px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    color: white;
+  }
+  
+  .progress-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .progress-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .progress-container {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .action-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .close-button {
+    background-color: #990000;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Make sure it looks good even on small mobile screens */
+  @media (max-width: 480px) {
+    .progress-row {
+      flex-direction: row;
+      gap: 10px;
+    }
+    
+    .progress-container {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .plant-detail-content {
+      padding: 15px;
+    }
+  }
+  

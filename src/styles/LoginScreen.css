@@ -1,0 +1,152 @@
+.login-container {
+  background-image: url("../assets/leaf-bg.jpg"); /* Replace this with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.login-box {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
+  color: white;
+}
+
+.logo-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: black;
+}
+
+.main-button {
+  width: 100%;
+  background-color: #004d00;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  font-size: 14px;
+}
+
+.divider {
+  margin: 16px 0 10px;
+  font-size: 14px;
+}
+
+.google-button {
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  font-size: 14px;
+}
+
+.google-icon {
+  height: 18px;
+  margin-right: 10px;
+}
+
+.privacy-text {
+  margin-top: 14px;
+  font-size: 11px;
+  color: #ccc;
+}
+
+.signup-redirect {
+  position: absolute;
+  top: 395px;
+  left: 55px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.signup-link {
+  color: #00ccff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+  color: #00a3cc;
+}
+
+
+/* Mobile Friendly */
+@media (max-width: 480px) {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yucca-logo {
+    width: 150px;
+  }
+
+  .logo-text {
+    font-size: 50px;
+  }
+
+  .subtext {
+    font-size: 20px;
+  }
+
+  .subtext1{
+    font-size: 18px;
+  }
+
+  .input-field {
+    width: 83%;
+  }
+
+  .main-button {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .google-button {
+    width: 90%;
+  }
+
+  .privacy-text {
+    font-size: 10px;
+  }
+}
